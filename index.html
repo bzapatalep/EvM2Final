@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluación Final - CV Interactivo</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navegación (Navbar) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Mi CV Profesional</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#perfil">Perfil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experiencia">Experiencia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                    <li class="nav-item">
+                        <button id="btn-theme" class="btn btn-outline-light btn-sm ms-lg-3">Modo Oscuro</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header / Perfil -->
+    <header id="perfil" class="container text-center mt-5 pt-5 section-padding">
+        <div class="profile-card p-4 shadow-sm rounded">
+            <img src="JPG/CV.PNG"Foto de perfil" class="rounded-circle mb-3 border border-4 border-primary">
+            <h1 class="display-4">Bernardita Zapata Lepumán</h1>
+            <p class="lead">Desarrollador Full Stack & Diseñador Web</p>
+            <div class="d-flex justify-content-center gap-2">
+                <button id="btn-color" class="btn btn-primary">Cambiar Color de Fondo</button>
+                <a href="https://github.com" class="btn btn-dark" target="_blank">Mi GitHub</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main class="container my-5">
+        <!-- Experiencia y Formación -->
+        <section id="experiencia" class="section-padding">
+            <h2 class="text-center mb-5 border-bottom pb-2">Experiencia y Habilidades</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <h3 class="h5 card-title text-primary">Formación Académica</h3>
+                            <p class="card-text"><strong> Desarrollador Phyton / Certificación SENCE</strong> - KIBERNUM y SENCE (2026)</p>
+                            <p> Plan formativo donde aprendí a desarrollar las habilidades necesarias para construir y mantener piezas de software en lenguaje Python y frameworks basados en Python, crear aplicaciones web en Full Stack Python y operar una base de datos para almacenar y manipular datos, a partir de especificaciones técnicas dadas que den solución a las problemáticas de la organización, aplicando buenas prácticas de programación con el objeto de lograr un producto con niveles de calidad acordes a las necesidades de la industria..</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <h3 class="h5 card-title text-primary">Habilidades Técnicas</h3>
+                            <div class="d-flex flex-wrap gap-2">
+                                <span class="badge bg-secondary">HTML5 / CSS3</span>
+                                <span class="badge bg-secondary">Bootstrap 5</span>
+                                <span class="badge bg-secondary">JavaScript</span>
+                                <span class="badge bg-secondary">jQuery</span>
+                                <span class="badge bg-secondary">Git / GitHub</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Formulario de Contacto -->
+        <section id="contacto" class="section-padding bg-light rounded p-4 shadow-sm">
+            <h2 class="text-center mb-4">Contáctame</h2>
+            <form id="contactForm" class="mx-auto" style="max-width: 600px;" novalidate>
+                <div class="mb-3">
+                    <label for="inputEmail" class="form-label font-weight-bold">Correo Electrónico</label>
+                    <input type="email" class="form-control" id="inputEmail" placeholder="nombre@ejemplo.com" required>
+                    <div id="emailFeedback" class="form-text mt-2"></div>
+                </div>
+                <div class="mb-3">
+                    <label for="mensaje" class="form-label">Tu Mensaje</label>
+                    <textarea class="form-control" id="mensaje" rows="4" placeholder="Escribe aquí tu mensaje..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-success w-100 py-2">Enviar Mensaje</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <p class="mb-0">© 2026 - Mi Portafolio Interactivo | Bernardita Zapata Lepuman</p>
+    </footer>
+
+    <!-- Scripts: JQUERY PRIMERO, LUEGO BOOTSTRAP, LUEGO TU SCRIPT -->
+    <script src="https://code.jquery.com"></script>
+    <script src="https://cdn.jsdelivr.net"></script>
+    <script src="script.js"></script>
+</body>
+</html>
